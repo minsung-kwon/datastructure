@@ -55,5 +55,5 @@ sz는 1<<k-1 (2의 k-1제곱)
 **쿼리 작성법**  
 root가 tree[1]  
 leaf는 tree[sz+1] ~ tree[sz+n] 에 위치  
-자식 node탐색 : tree[cur*2] tree[cur*2+1]  
+자식 node탐색 : tree[cur*2], tree[cur*2+1]  
 부모 node탐색 : tree[cur/2]

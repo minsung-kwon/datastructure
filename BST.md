@@ -179,7 +179,7 @@ void BST::Helper(Node* node)
 		return;
 
     Helper(node->left);
-	std::cout << node->key << ' '<< node->value;
+	std::cout << node->key << ' '<< node->value<< ' ';
     Helper(node->right);
 }
 ```
@@ -200,14 +200,14 @@ int main() {
 	bst.InOrderTraversal();
 	
 	bst.Remove(4);
-	std::cout << '\n';
+	std::cout << "키값 4인 노드 제거함\n";
 	if (bst.Lookup(4) == 0)
 	{
-		std::cout << "4 ����\n";
+		std::cout << "키값이 4인 노드가 없음\n";
 	}
 	else
 	{
-		std::cout << "4 ����\n";
+		std::cout << "키값이 4인 노드가 있음\n";
 	}
 
 	std::cout << '\n';
